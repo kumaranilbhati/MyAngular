@@ -1,0 +1,17 @@
+node {
+        stage('checkout SCM'){
+                git branch : 'main', url: 'git@github.com:kumaranilbhati/MyAngular.git'
+        }
+
+        stage('Install node modules'){
+                sh "npm install"
+        }
+
+        stage('build'){
+                sh "npm run build"
+        }
+
+        stage('Deploy'){
+                sh "npm run start"
+        }
+}
