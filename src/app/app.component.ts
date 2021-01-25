@@ -8,6 +8,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'advanced-preloading';
+  arr = [1,2,3,4, 5, 6, 7]
   // constructor(
   //   private activatedRoute: ActivatedRoute,
   //   private router: Router
